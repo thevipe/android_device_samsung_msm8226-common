@@ -56,13 +56,13 @@
   {
     "remote": "github",
     "repository": "scanno/android_hardware_qcom_display-caf-msm8952",
-    "target_path": "hardware/qcom/display-caf-msm8992",
+    "target_path": "hardware/qcom/display-caf-msm8952",
     "revision": "android-7.1"
   },
   {
     "remote": "github",
     "repository": "scanno/android_hardware_qcom_media-caf-msm8952",
-    "target_path": "hardware/qcom/media-caf-msm8992",
+    "target_path": "hardware/qcom/media-caf-msm8952",
     "revision": "android-7.1"
   },
   {
