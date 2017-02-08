@@ -12,10 +12,10 @@
     "revision": "android-7.1"
   },
   {
-    "remote": "github",
-    "repository": "scanno/android_kernel_samsung_msm8976",
+    "remote": "omnirom",
+    "repository": "android_kernel_samsung_msm8976",
     "target_path": "kernel/samsung/msm8976",
-    "revision": "cm-14.1"
+    "revision": "android-7.1"
   },
   {
     "remote": "omnirom",
