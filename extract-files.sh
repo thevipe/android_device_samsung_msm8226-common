@@ -34,6 +34,7 @@ while getopts ":nhsd:" options
 do
   case $options in
     n ) CLEANUP="false" ;;
+    t ) CLEANUP="false" ;;
     d ) SRC=$OPTARG ;;
     s ) SETUP=1 ;;
     h ) echo "Usage: `basename $0` [OPTIONS] "
