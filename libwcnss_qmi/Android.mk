@@ -1,4 +1,4 @@
-# Copyright (C) 2015-2016 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,35 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
-
+LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := lights_helper.c
+LOCAL_SRC_FILES := wcnss_qmi_client.c
+LOCAL_CFLAGS += -Wall -Werror
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
-LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
-
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
 LOCAL_SHARED_LIBRARIES := liblog
 
-LOCAL_MODULE := liblights_helper
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := libwcnss_qmi
 
-include $(BUILD_STATIC_LIBRARY)
-
-ifeq ($(TARGET_PROVIDES_LIBLIGHT),true)
-
-include $(CLEAR_VARS)
-
-LOCAL_SRC_FILES := lights.c
-
-LOCAL_SHARED_LIBRARIES := liblog
-LOCAL_STATIC_LIBRARIES := liblights_helper
-
-LOCAL_MODULE := lights.$(TARGET_BOARD_PLATFORM)
-LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
-
-endif

@@ -165,7 +165,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-<!--    <integer name="config_deviceHardwareWakeKeys">65</integer> -->
+    <!-- <integer name="config_deviceHardwareWakeKeys">65</integer>-->
 
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
@@ -235,15 +235,14 @@
     <string name="config_networkLocationProviderPackageName" translatable="false">com.qualcomm.location</string>
     <string name="config_fusedLocationProviderPackageName" translatable="false">com.qualcomm.location</string>
 
-    <!-- Default list of files pinned by the Pinner Service -->
-    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
-        <item>"/system/framework/arm64/boot-framework.oat"</item>
-        <item>"/system/framework/oat/arm64/services.odex"</item>
-        <item>"/system/framework/arm64/boot.oat"</item>
-        <item>"/system/framework/arm64/boot-core-libart.oat"</item>
-   </string-array>
-
     <!-- The device supports freeform window management -->
-    <bool name="config_freeformWindowManagement">true</bool>
+    <!--<bool name="config_freeformWindowManagement">true</bool>-->
 
+    <!-- Override the default detection behavior for the framework method
+         android.view.ViewConfiguration#hasPermanentMenuKey().
+         Valid settings are:
+         0 - No change. Use the default autodetection behavior.
+         1 - The device DOES have a permanent menu key; ignore autodetection.
+         2 - The device DOES NOT have a permanent menu key; ignore autodetection. -->
+    <integer name="config_overrideHasPermanentMenuKey">2</integer>
 </resources>
