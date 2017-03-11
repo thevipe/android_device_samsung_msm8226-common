@@ -153,7 +153,11 @@ static bool wasVideo = false;
 char *camera_fixup_setparams(struct camera_device *device, const char *settings)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	int id = CAMERA_ID(device);
+=======
+    int id = CAMERA_ID(device);
+>>>>>>> fa73356... camerawrapper from du 6
 =======
     int id = CAMERA_ID(device);
 >>>>>>> fa73356... camerawrapper from du 6
@@ -413,7 +417,11 @@ int camera_auto_focus(struct camera_device * device)
 int camera_cancel_auto_focus(struct camera_device * device)
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	android::CameraParameters params;
+=======
+    android::CameraParameters params;
+>>>>>>> fa73356... camerawrapper from du 6
 =======
     android::CameraParameters params;
 >>>>>>> fa73356... camerawrapper from du 6
