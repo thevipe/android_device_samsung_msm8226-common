@@ -16,6 +16,11 @@
 
 #define CAMERA_PARAMETERS_EXTRA_C \
 const char CameraParameters::KEY_SUPPORTED_ISO_MODES[] = "iso-values"; \
+<<<<<<< HEAD
+=======
+const char CameraParameters::KEY_DIS[] = "dis"; \
+const char CameraParameters::DIS_DISABLE[] = "disable"; \
+>>>>>>> fa73356... camerawrapper from du 6
 const char CameraParameters::KEY_FACE_DETECTION[] = "face-detection"; \
 const char CameraParameters::KEY_SUPPORTED_FACE_DETECTION[] = "face-detection-values"; \
 const char CameraParameters::FACE_DETECTION_OFF[] = "off"; \
@@ -103,7 +108,10 @@ const char CameraParameters::EFFECT_NEON[] = "neon"; \
 const char CameraParameters::SCENE_MODE_FLOWERS[] = "flowers"; \
 const char CameraParameters::SCENE_MODE_AR[] = "AR"; \
 const char CameraParameters::PIXEL_FORMAT_YUV420SP_ADRENO[] = "yuv420sp-adreno"; \
+<<<<<<< HEAD
 const char CameraParameters::PIXEL_FORMAT_YUV420SP_NV21E[] = "yuv420sp-nv21e"; \
+=======
+>>>>>>> fa73356... camerawrapper from du 6
 const char CameraParameters::PIXEL_FORMAT_RAW[] = "raw"; \
 const char CameraParameters::PIXEL_FORMAT_YV12[] = "yuv420p"; \
 const char CameraParameters::PIXEL_FORMAT_NV12[] = "nv12"; \
@@ -116,6 +124,7 @@ const char CameraParameters::EFFECT_VINTAGE_WARM[] = "vintage-warm"; \
 const char CameraParameters::EFFECT_WASHED[] = "washed"; \
 const char CameraParameters::SCENE_MODE_BACKLIGHT[] = "backlight"; \
 const char CameraParameters::SCENE_MODE_ASD[] = "asd"; \
+<<<<<<< HEAD
 int CameraParameters::getInt64(const char *key __unused) const { return -1; }; \
 const char *CameraParameters::getPreviewFrameRateMode() const { return get(KEY_PREVIEW_FRAME_RATE_MODE); }; \
 void CameraParameters::setPreviewFrameRateMode(const char *mode) { set(KEY_PREVIEW_FRAME_RATE_MODE, mode); }; \
@@ -126,6 +135,14 @@ void CameraParameters::setPreviewFpsRange(int minFPS __unused, int maxFPS __unus
 
 #define CAMERA_PARAMETERS_EXTRA_H \
     static const char KEY_SUPPORTED_ISO_MODES[]; \
+=======
+const char *CameraParameters::getPreviewFrameRateMode() const { return get(KEY_PREVIEW_FRAME_RATE_MODE); };
+
+#define CAMERA_PARAMETERS_EXTRA_H \
+    static const char KEY_SUPPORTED_ISO_MODES[]; \
+    static const char KEY_DIS[]; \
+    static const char DIS_DISABLE[]; \
+>>>>>>> fa73356... camerawrapper from du 6
     static const char KEY_FACE_DETECTION[]; \
     static const char KEY_SUPPORTED_FACE_DETECTION[]; \
     static const char FACE_DETECTION_OFF[]; \
@@ -213,7 +230,10 @@ void CameraParameters::setPreviewFpsRange(int minFPS __unused, int maxFPS __unus
     static const char SCENE_MODE_FLOWERS[]; \
     static const char SCENE_MODE_AR[]; \
     static const char PIXEL_FORMAT_YUV420SP_ADRENO[]; \
+<<<<<<< HEAD
     static const char PIXEL_FORMAT_YUV420SP_NV21E[]; \
+=======
+>>>>>>> fa73356... camerawrapper from du 6
     static const char PIXEL_FORMAT_RAW[]; \
     static const char PIXEL_FORMAT_YV12[]; \
     static const char PIXEL_FORMAT_NV12[]; \
@@ -226,6 +246,7 @@ void CameraParameters::setPreviewFpsRange(int minFPS __unused, int maxFPS __unus
     static const char EFFECT_WASHED[]; \
     static const char SCENE_MODE_BACKLIGHT[]; \
     static const char SCENE_MODE_ASD[]; \
+<<<<<<< HEAD
     int getInt64(const char *key __unused) const; \
     const char *getPreviewFrameRateMode() const; \
     void setPreviewFrameRateMode(const char *mode); \
@@ -233,3 +254,6 @@ void CameraParameters::setPreviewFpsRange(int minFPS __unused, int maxFPS __unus
     void setTouchIndexAec(int x __unused, int y __unused); \
     void setTouchIndexAf(int x __unused, int y __unused); \
     void setPreviewFpsRange(int minFPS __unused, int maxFPS __unused);
+=======
+    const char *getPreviewFrameRateMode() const;
+>>>>>>> fa73356... camerawrapper from du 6
