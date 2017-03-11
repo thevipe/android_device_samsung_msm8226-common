@@ -172,6 +172,8 @@ char *camera_fixup_setparams(struct camera_device *device, const char *settings)
     params.dump();
 #endif
 
+    params.set(CameraParameters::KEY_PREVIEW_FPS_RANGE, "7500,30000");
+
     const char KEY_SAMSUNG_CAMERA_MODE[] = "cam_mode";
     const char* camMode = params.get(KEY_SAMSUNG_CAMERA_MODE);
 
