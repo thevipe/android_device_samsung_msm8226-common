@@ -1,5 +1,10 @@
 /*
+<<<<<<< HEAD:include/device_perms.h
  * Copyright (C) 2014 The CyanogenMod Project
+=======
+ * Copyright (C) 2012 The Android Open Source Project
+ * Copyright (C) 2012 The CyanogenMod Project <http://www.cyanogenmod.org>
+>>>>>>> 56d5d03... testing 1:bluetooth/bdroid_buildcfg.h
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +19,7 @@
  * limitations under the License.
  */
 
+<<<<<<< HEAD:include/device_perms.h
 #ifndef DEVICE_PERMS_H
 #define DEVICE_PERMS_H
 
@@ -21,3 +27,14 @@
     { "persist.audio.",   AID_SYSTEM,   0 }, \
     { "persist.sys.camera.", AID_MEDIA, 0 },
 #endif /* DEVICE_PERMS_H */
+=======
+#ifndef _BDROID_BUILDCFG_H
+#define _BDROID_BUILDCFG_H
+
+#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy Tab 4"
+
+/* Defined if the kernel does not have support for CLOCK_BOOTTIME_ALARM */
+#define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
+
+#endif
+>>>>>>> 56d5d03... testing 1:bluetooth/bdroid_buildcfg.h

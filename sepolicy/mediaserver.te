@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 allow mediaserver system_prop:property_service set;
 allow mediaserver socket_device:sock_file write;
 allow mediaserver sysfs_camera:dir search;
 allow mediaserver sysfs_camera:file { getattr open read };
 
+=======
+allow mediaserver system_data_file:sock_file write;
+>>>>>>> 56d5d03... testing 1

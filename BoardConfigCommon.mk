@@ -26,15 +26,50 @@ TARGET_USE_SDCLANG := true
 TARGET_CPU_MEMCPY_BASE_OPT_DISABLE := true
 TARGET_CPU_VARIANT := krait
 
+<<<<<<< HEAD
+=======
+TARGET_BOARD_PLATFORM := msm8226
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
+
+#ENABLE_CPUSETS := true
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := MSM8226
+TARGET_NO_BOOTLOADER := true
+
+# Kernel
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x37
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_IMAGE_NAME := zImage
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_SEPARATED_DT := true
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000 --board SERPMIUV002
+TARGET_KERNEL_CONFIG := msm8226-sec_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8226
+
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+
+>>>>>>> 56d5d03... testing 1
 # Audio
 AUDIO_FEATURE_ENABLED_LOW_LATENCY_CAPTURE := true
 BOARD_USES_ALSA_AUDIO := true
 
 # Bluetooth
+<<<<<<< HEAD
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
 QCOM_BT_USE_SMD_TTY := true
+=======
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_QCOM := true
+BLUETOOTH_HCI_USE_MCT := true
+>>>>>>> 56d5d03... testing 1
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
@@ -47,8 +82,16 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
+<<<<<<< HEAD
 TARGET_NEED_DISABLE_AUTOFOCUS := true
 TARGET_NEED_PREVIEW_SIZE_FIXUP := true
+=======
+# Charger
+BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
+BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
+BOARD_CHARGER_ENABLE_SUSPEND := true
+BOARD_NO_CHARGER_LED := true
+>>>>>>> 56d5d03... testing 1
 
 # CMHW
 BOARD_HARDWARE_CLASS += $(VENDOR_PATH)/cmhw
@@ -70,6 +113,7 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 # of the device.
 MAX_EGL_CACHE_SIZE := 2048*1024
 
+<<<<<<< HEAD
 # GPS
 TARGET_NO_RPC := true
 TARGET_GPS_HAL_PATH := device/samsung/msm8226-common/gps
@@ -95,7 +139,62 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
+=======
+# Init
+TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
+
+# Keymaster
+TARGET_PROVIDES_KEYMASTER := true
+
+# Peripheral manager
+#TARGET_PER_MGR_ENABLED := true
+
+# Power
+TARGET_POWERHAL_VARIANT := qcom
+
+# Legacy BLOB Support
+TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+
+# liblights
+TARGET_PROVIDES_LIBLIGHT := true
+
+# Properties
+TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
+
+# Qualcomm
+BOARD_USES_QCOM_HARDWARE := true
+BOARD_USES_QC_TIME_SERVICES := true
+TARGET_USES_QCOM_BSP := true
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8974
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8974
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8974
+TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
+TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8974
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab.qcom
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+>>>>>>> 56d5d03... testing 1
 
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+<<<<<<< HEAD
+=======
+
+# Wifi
+BOARD_HAS_QCOM_WLAN := true
+BOARD_HAS_QCOM_WLAN_SDK := true
+BOARD_WLAN_DEVICE := qcwcn
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+TARGET_PROVIDES_WCNSS_QMI := true
+TARGET_USES_QCOM_WCNSS_QMI := true
+TARGET_USES_WCNSS_CTRL := true
+WIFI_DRIVER_FW_PATH_AP := "ap"
+WIFI_DRIVER_FW_PATH_STA := "sta"
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+>>>>>>> 56d5d03... testing 1
