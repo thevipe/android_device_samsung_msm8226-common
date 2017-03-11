@@ -82,12 +82,31 @@ BLUETOOTH_HCI_USE_MCT := true
 >>>>>>> 56d5d03... testing 1
 
 # Camera
+<<<<<<< HEAD
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 TARGET_USE_COMPAT_GRALLOC_ALIGN := true
 TARGET_USES_CPU_BOOST_HINT := true
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
+=======
+TARGET_PROVIDES_CAMERA_HAL := true
+USE_DEVICE_SPECIFIC_CAMERA := true
+#TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+TARGET_USE_COMPAT_GRALLOC_ALIGN := true
+
+TARGET_ADD_ISO_MODE_1600 := true
+TARGET_ADD_ISO_MODE_HJR := true
+TARGET_ADD_ISO_MODE_HJR := true
+TARGET_NEED_CAMERA_ZSL := true
+TARGET_NEED_CAMERA_ZSL := true
+TARGET_NEED_EXPOSURE_HACK := true
+TARGET_NEED_DISABLE_AUTOFOCUS := true
+TARGET_NEED_DISABLE_AUTOFOCUS := true
+
+# Legacy MMAP for pre-lollipop blobs
+#BOARD_USES_LEGACY_MMAP := true
+>>>>>>> ad670a7... test camera
 
 <<<<<<< HEAD
 TARGET_NEED_DISABLE_AUTOFOCUS := true
@@ -102,6 +121,8 @@ BOARD_NO_CHARGER_LED := true
 >>>>>>> 56d5d03... testing 1
 =======
 >>>>>>> 56d5d03... testing 1
+
+CHARGING_ENABLED_PATH := "/sys/class/power_supply/battery/batt_lp_charging"
 
 # CMHW
 BOARD_HARDWARE_CLASS += $(VENDOR_PATH)/cmhw
@@ -154,7 +175,7 @@ endif
 =======
 >>>>>>> 56d5d03... testing 1
 # Init
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
+#TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true

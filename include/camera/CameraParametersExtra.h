@@ -131,6 +131,7 @@ const char CameraParameters::EFFECT_VINTAGE_COLD[] = "vintage-cold"; \
 const char CameraParameters::EFFECT_VINTAGE_WARM[] = "vintage-warm"; \
 const char CameraParameters::EFFECT_WASHED[] = "washed"; \
 const char CameraParameters::SCENE_MODE_BACKLIGHT[] = "backlight"; \
+<<<<<<< HEAD
 const char CameraParameters::SCENE_MODE_ASD[] = "asd"; \
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -154,6 +155,9 @@ const char *CameraParameters::getPreviewFrameRateMode() const { return get(KEY_P
 >>>>>>> fa73356... camerawrapper from du 6
 =======
 const char *CameraParameters::getPreviewFrameRateMode() const { return get(KEY_PREVIEW_FRAME_RATE_MODE); };
+=======
+const char CameraParameters::SCENE_MODE_ASD[] = "asd";
+>>>>>>> ad670a7... test camera
 
 #define CAMERA_PARAMETERS_EXTRA_H \
     static const char KEY_SUPPORTED_ISO_MODES[]; \
@@ -265,6 +269,7 @@ const char *CameraParameters::getPreviewFrameRateMode() const { return get(KEY_P
     static const char EFFECT_VINTAGE_WARM[]; \
     static const char EFFECT_WASHED[]; \
     static const char SCENE_MODE_BACKLIGHT[]; \
+<<<<<<< HEAD
     static const char SCENE_MODE_ASD[]; \
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -281,3 +286,6 @@ const char *CameraParameters::getPreviewFrameRateMode() const { return get(KEY_P
 =======
     const char *getPreviewFrameRateMode() const;
 >>>>>>> fa73356... camerawrapper from du 6
+=======
+    static const char SCENE_MODE_ASD[];
+>>>>>>> ad670a7... test camera

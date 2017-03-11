@@ -25,9 +25,9 @@
   },
   {
     "remote": "omnirom",
-    "repository": "android_hardware_sony_timekeep",
-    "target_path": "hardware/sony/timekeep",
-    "revision": "android-7.1"
+    "repository": "android_hardware_sony_boringssl-compat",
+    "target_path": "hardware/sony/boringssl-compat",
+    "revision": "android-6.0"
   },
   {
     "remote": "omnirom",
@@ -69,6 +69,24 @@
     "remote": "omnirom",
     "repository": "android_hardware_qcom_media-caf-msm8974",
     "target_path": "hardware/qcom/media-caf-msm8974",
+    "revision": "android-7.0"
+  },
+  {
+    "remote": "omnirom",
+    "repository":"android_external_ant-wireless_antradio-library",
+    "target_path": "external/ant-wireless/antradio-library",
+    "revision": "android-7.0"
+  },
+  {
+    "remote": "omnirom",
+    "repository":"android_external_ant-wireless_ant_service",
+    "target_path": "external/ant-wireless/ant/service",
+    "revision": "android-7.0"
+  },
+  {
+    "remote": "omnirom",
+    "repository":"android_external_ant-wireless_ant_native",
+    "target_path": "external/ant-wireless/ant/native",
     "revision": "android-7.0"
   }
 ]
