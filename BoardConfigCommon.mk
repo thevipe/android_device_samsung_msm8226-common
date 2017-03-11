@@ -60,6 +60,7 @@ BOARD_USES_ALSA_AUDIO := true
 
 # Bluetooth
 <<<<<<< HEAD
+<<<<<<< HEAD
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
@@ -73,6 +74,12 @@ BLUETOOTH_HCI_USE_MCT := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
+=======
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_QCOM := true
+BLUETOOTH_HCI_USE_MCT := true
+>>>>>>> 56d5d03... testing 1
 
 # Camera
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
@@ -91,6 +98,9 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charg
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_NO_CHARGER_LED := true
+<<<<<<< HEAD
+>>>>>>> 56d5d03... testing 1
+=======
 >>>>>>> 56d5d03... testing 1
 
 # CMHW
@@ -126,6 +136,7 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
+<<<<<<< HEAD
 # Platform
 TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
@@ -140,6 +151,8 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 =======
+=======
+>>>>>>> 56d5d03... testing 1
 # Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 

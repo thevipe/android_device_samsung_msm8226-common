@@ -1,6 +1,11 @@
 /*
 <<<<<<< HEAD:include/device_perms.h
+<<<<<<< HEAD:include/device_perms.h
  * Copyright (C) 2014 The CyanogenMod Project
+=======
+ * Copyright (C) 2012 The Android Open Source Project
+ * Copyright (C) 2012 The CyanogenMod Project <http://www.cyanogenmod.org>
+>>>>>>> 56d5d03... testing 1:bluetooth/bdroid_buildcfg.h
 =======
  * Copyright (C) 2012 The Android Open Source Project
  * Copyright (C) 2012 The CyanogenMod Project <http://www.cyanogenmod.org>

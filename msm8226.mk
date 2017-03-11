@@ -109,6 +109,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8226 \
@@ -125,8 +129,11 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
 <<<<<<< HEAD
+<<<<<<< HEAD
     gps.msm8226
 =======
+=======
+>>>>>>> 56d5d03... testing 1
     libcurl
 >>>>>>> 56d5d03... testing 1
 
@@ -196,6 +203,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 <<<<<<< HEAD
+<<<<<<< HEAD
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh
 
@@ -212,6 +220,8 @@ PRODUCT_PACKAGES += \
 # Inherit from qcom-common
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
 =======
+=======
+>>>>>>> 56d5d03... testing 1
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.qcom:root/fstab.qcom \
     $(LOCAL_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
