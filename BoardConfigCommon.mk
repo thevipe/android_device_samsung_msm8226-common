@@ -26,8 +26,6 @@ TARGET_USE_SDCLANG := true
 TARGET_CPU_MEMCPY_BASE_OPT_DISABLE := true
 TARGET_CPU_VARIANT := krait
 
-<<<<<<< HEAD
-=======
 TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 
@@ -53,24 +51,19 @@ TARGET_KERNEL_SOURCE := kernel/samsung/msm8226
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
->>>>>>> 56d5d03... testing 1
 # Audio
 AUDIO_FEATURE_ENABLED_LOW_LATENCY_CAPTURE := true
 BOARD_USES_ALSA_AUDIO := true
 
 # Bluetooth
-<<<<<<< HEAD
-<<<<<<< HEAD
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
 QCOM_BT_USE_SMD_TTY := true
-=======
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
->>>>>>> 56d5d03... testing 1
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
@@ -79,17 +72,14 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
->>>>>>> 56d5d03... testing 1
 
 # Camera
-<<<<<<< HEAD
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 TARGET_USE_COMPAT_GRALLOC_ALIGN := true
 TARGET_USES_CPU_BOOST_HINT := true
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
-=======
 TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 #TARGET_HAS_LEGACY_CAMERA_HAL1 := true
@@ -106,21 +96,14 @@ TARGET_NEED_DISABLE_AUTOFOCUS := true
 
 # Legacy MMAP for pre-lollipop blobs
 #BOARD_USES_LEGACY_MMAP := true
->>>>>>> ad670a7... test camera
 
-<<<<<<< HEAD
 TARGET_NEED_DISABLE_AUTOFOCUS := true
 TARGET_NEED_PREVIEW_SIZE_FIXUP := true
-=======
 # Charger
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_NO_CHARGER_LED := true
-<<<<<<< HEAD
->>>>>>> 56d5d03... testing 1
-=======
->>>>>>> 56d5d03... testing 1
 
 CHARGING_ENABLED_PATH := "/sys/class/power_supply/battery/batt_lp_charging"
 
@@ -144,7 +127,6 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 # of the device.
 MAX_EGL_CACHE_SIZE := 2048*1024
 
-<<<<<<< HEAD
 # GPS
 TARGET_NO_RPC := true
 TARGET_GPS_HAL_PATH := device/samsung/msm8226-common/gps
@@ -171,9 +153,7 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
-=======
-=======
->>>>>>> 56d5d03... testing 1
+
 # Init
 #TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
@@ -214,8 +194,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
-<<<<<<< HEAD
-=======
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
@@ -231,4 +209,3 @@ TARGET_USES_WCNSS_CTRL := true
 WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
->>>>>>> 56d5d03... testing 1
