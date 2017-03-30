@@ -1,7 +1,6 @@
 # Art
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-swap=false
-
+    dalvik.vm.dex2oat-swap=true
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
