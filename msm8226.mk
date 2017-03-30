@@ -94,7 +94,6 @@ PRODUCT_PACKAGES += \
     camera.msm8226 \
     libboringssl-compat \
     libstlport \
-<<<<<<< HEAD
     libxml2
     #Snap
 
