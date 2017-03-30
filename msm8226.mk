@@ -17,8 +17,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-<<<<<<< HEAD
-=======
 # Screen density
 PRODUCT_AAPT_CONFIG := normal large xlarge
 PRODUCT_AAPT_PREF_CONFIG := mdpi
@@ -67,7 +65,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
 
->>>>>>> 56d5d03... testing 1
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
@@ -83,8 +80,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
-<<<<<<< HEAD
-=======
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
@@ -94,7 +89,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Gello
 
->>>>>>> 56d5d03... testing 1
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8226 \
@@ -114,9 +108,8 @@ PRODUCT_PACKAGES += \
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
-=======
+
     SnapdragonCamera
->>>>>>> ad670a7... test camera
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -137,14 +130,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
-<<<<<<< HEAD
-    gps.msm8226
-=======
-=======
->>>>>>> 56d5d03... testing 1
     libcurl
->>>>>>> 56d5d03... testing 1
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
@@ -211,8 +197,6 @@ PRODUCT_PACKAGES += \
     libril_shim
 
 # Ramdisk
-<<<<<<< HEAD
-<<<<<<< HEAD
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh
 
@@ -228,9 +212,7 @@ PRODUCT_PACKAGES += \
 
 # Inherit from qcom-common
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
-=======
-=======
->>>>>>> 56d5d03... testing 1
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.qcom:root/fstab.qcom \
     $(LOCAL_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
@@ -265,4 +247,3 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
->>>>>>> 56d5d03... testing 1
