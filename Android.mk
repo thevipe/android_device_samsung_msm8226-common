@@ -1,12 +1,7 @@
-<<<<<<< HEAD
+
 # Copyright (C) 2014 The CyanogenMod Project
-=======
 #
 # Copyright (C) 2012 The Android Open-Source Project
-<<<<<<< HEAD
->>>>>>> 56d5d03... testing 1
-=======
->>>>>>> 56d5d03... testing 1
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +14,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-<<<<<<< HEAD
-=======
 #
 
 # WARNING: Everything listed here will be built on ALL platforms,
@@ -28,17 +21,11 @@
 # named (liblights.tuna), and must build everywhere, or limit themselves
 # to only building on ARM if they include assembly. Individual makefiles
 # are responsible for having their own logic, for fine-grained control.
-<<<<<<< HEAD
->>>>>>> 56d5d03... testing 1
-=======
->>>>>>> 56d5d03... testing 1
 
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(BOARD_VENDOR),samsung)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8226)
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
@@ -47,7 +34,6 @@ ADSP_IMAGES := \
     adsp.b08 adsp.b09 adsp.b10 adsp.b11 adsp.b12 adsp.b13 adsp.mdt
 =======
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
->>>>>>> 56d5d03... testing 1
 
 ADSP_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(ADSP_IMAGES)))
 $(ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
@@ -61,11 +47,9 @@ ALL_DEFAULT_INSTALLED_MODULES += $(ADSP_SYMLINKS)
 FIRMWARE_CMNLIB_IMAGES := \
     cmnlib.b00 cmnlib.b01 cmnlib.b02 cmnlib.b03 cmnlib.mdt
 
-<<<<<<< HEAD
 FIRMWARE_CMNLIB_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(FIRMWARE_CMNLIB_IMAGES)))
 $(FIRMWARE_CMNLIB_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "CMNLIB Firmware link: $@"
-=======
 ADSP_IMAGES := \
     adsp.b00 adsp.b01 adsp.b02 adsp.b03 adsp.b04 adsp.b05 adsp.b06 \
     adsp.b08 adsp.b09 adsp.b10 adsp.b11 adsp.b12 adsp.b13 adsp.mdt
@@ -133,12 +117,10 @@ MLDAP_IMAGES := \
 MLDAP_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(MLDAP_IMAGES)))
 $(MLDAP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "MLDAP firmware link: $@"
->>>>>>> 56d5d03... testing 1
 	@mkdir -p $(dir $@)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
-<<<<<<< HEAD
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_CMNLIB_SYMLINKS)
 
 ISDB_IMAGES := \
@@ -147,7 +129,6 @@ ISDB_IMAGES := \
 ISDB_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(ISDB_IMAGES)))
 $(ISDB_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "ISDB firmware link: $@"
-=======
 ALL_DEFAULT_INSTALLED_MODULES += $(MLDAP_SYMLINKS)
 
 MC_IMAGES := \
@@ -156,12 +137,10 @@ MC_IMAGES := \
 MC_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(MC_IMAGES)))
 $(MC_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Mobicore firmware link: $@"
->>>>>>> 56d5d03... testing 1
 	@mkdir -p $(dir $@)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
-<<<<<<< HEAD
 ALL_DEFAULT_INSTALLED_MODULES += $(ISDB_SYMLINKS)
 
 KM_IMAGES := \
@@ -242,9 +221,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(SECSTOR_SYMLINKS)
 
 SKM_IMAGES := \
     skm.b00 skm.b01 skm.b02 skm.b03 skm.mdt
-=======
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
->>>>>>> 56d5d03... testing 1
 
 SKM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(SKM_IMAGES)))
 $(SKM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
@@ -253,7 +230,6 @@ $(SKM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
-=======
 ALL_DEFAULT_INSTALLED_MODULES += $(MC_SYMLINKS)
 
 MODEM_IMAGES := \
@@ -283,14 +259,12 @@ $(PROV_MODEM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(PROV_MODEM_SYMLINKS)
 
-<<<<<<< HEAD
 ACTLOCK_IMAGES := \
     act_lock.b00 act_lock.b01 act_lock.b02 act_lock.b03 act_lock.mdt
 
 ACTLOCK_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(ACTLOCK_IMAGES)))
 $(ACTLOCK_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Actlock firmware link: $@"
-=======
 ADSP_IMAGES := \
     adsp.b00 adsp.b01 adsp.b02 adsp.b03 adsp.b04 adsp.b05 adsp.b06 \
     adsp.b08 adsp.b09 adsp.b10 adsp.b11 adsp.b12 adsp.b13 adsp.mdt
@@ -358,12 +332,10 @@ MLDAP_IMAGES := \
 MLDAP_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(MLDAP_IMAGES)))
 $(MLDAP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "MLDAP firmware link: $@"
->>>>>>> 56d5d03... testing 1
 	@mkdir -p $(dir $@)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
-<<<<<<< HEAD
 ALL_DEFAULT_INSTALLED_MODULES += $(ACTLOCK_SYMLINKS)
 
 TKM_IMAGES := \
@@ -372,7 +344,6 @@ TKM_IMAGES := \
 TKM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(TKM_IMAGES)))
 $(TKM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "TKM firmware link: $@"
-=======
 ALL_DEFAULT_INSTALLED_MODULES += $(MLDAP_SYMLINKS)
 
 MC_IMAGES := \
@@ -381,13 +352,9 @@ MC_IMAGES := \
 MC_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(MC_IMAGES)))
 $(MC_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Mobicore firmware link: $@"
->>>>>>> 56d5d03... testing 1
 	@mkdir -p $(dir $@)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
-
-<<<<<<< HEAD
-=======
 ALL_DEFAULT_INSTALLED_MODULES += $(MC_SYMLINKS)
 
 MODEM_IMAGES := \
@@ -439,12 +406,10 @@ $(TKM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
->>>>>>> 56d5d03... testing 1
 ALL_DEFAULT_INSTALLED_MODULES += $(TKM_SYMLINKS)
 
 PLAYREADY_IMAGES := \
     playread.b00 playread.b01 playread.b02 playread.b03 playread.mdt
-<<<<<<< HEAD
 
 PLAYREADY_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(PLAYREADY_IMAGES)))
 $(PLAYREADY_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
@@ -453,7 +418,6 @@ $(PLAYREADY_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
-=======
 
 PLAYREADY_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(PLAYREADY_IMAGES)))
 $(PLAYREADY_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
@@ -462,7 +426,6 @@ $(PLAYREADY_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
->>>>>>> 56d5d03... testing 1
 ALL_DEFAULT_INSTALLED_MODULES += $(PLAYREADY_SYMLINKS)
 
 SECSTOR_IMAGES := \
@@ -486,11 +449,6 @@ $(SKM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(dir $@)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
-
-<<<<<<< HEAD
->>>>>>> 56d5d03... testing 1
-=======
->>>>>>> 56d5d03... testing 1
 ALL_DEFAULT_INSTALLED_MODULES += $(SKM_SYMLINKS)
 
 SKMM_TA_IMAGES := \
@@ -517,17 +475,12 @@ $(SSHDCPAP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(SSHDCPAP_SYMLINKS)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 TBASE_IMAGES := \
     tbase300.b00 tbase300.b01 tbase300.b02 tbase300.b03 tbase300.mdt
 
 SSHDCPAP_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(SSHDCPAP_IMAGES)))
 $(TBASE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "SSHDCPAP firmware link: $@"
-=======
-=======
->>>>>>> 56d5d03... testing 1
 TIMA_IMAGES := \
     tima_atn.b00 tima_atn.b01 tima_atn.b02 tima_atn.b03 tima_atn.mdt \
     tima_key.b00 tima_key.b01 tima_key.b02 tima_key.b03 tima_key.mdt \
@@ -537,23 +490,12 @@ TIMA_IMAGES := \
 TIMA_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(TIMA_IMAGES)))
 $(TIMA_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Tima firmware link: $@"
-<<<<<<< HEAD
->>>>>>> 56d5d03... testing 1
-=======
->>>>>>> 56d5d03... testing 1
 	@mkdir -p $(dir $@)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 ALL_DEFAULT_INSTALLED_MODULES += $(TBASE_SYMLINKS)
-=======
 ALL_DEFAULT_INSTALLED_MODULES += $(TIMA_SYMLINKS)
->>>>>>> 56d5d03... testing 1
-=======
 ALL_DEFAULT_INSTALLED_MODULES += $(TIMA_SYMLINKS)
->>>>>>> 56d5d03... testing 1
 
 TZPR_IMAGES := \
     tzpr25.b00 tzpr25.b01 tzpr25.b02 tzpr25.b03 tzpr25.mdt
@@ -591,8 +533,6 @@ $(VENUS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(VENUS_SYMLINKS)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 WCNSS_IMAGES := \
     wcnss.b00 wcnss.b01 wcnss.b02 wcnss.b04 wcnss.b06 \
     wcnss.b07 wcnss.b08 wcnss.b09 wcnss.mdt
@@ -607,14 +547,10 @@ $(WCNSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_SYMLINKS)
 
 WV_IMAGES := \
-=======
 WV_IMAGES := \
     cmnlib.b00 cmnlib.b01 cmnlib.b02 cmnlib.b03 cmnlib.mdt \
->>>>>>> 56d5d03... testing 1
-=======
 WV_IMAGES := \
     cmnlib.b00 cmnlib.b01 cmnlib.b02 cmnlib.b03 cmnlib.mdt \
->>>>>>> 56d5d03... testing 1
     widevine.b00 widevine.b01 widevine.b02 widevine.b03 widevine.mdt
 
 WV_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(WV_IMAGES)))
@@ -627,17 +563,12 @@ $(WV_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 ALL_DEFAULT_INSTALLED_MODULES += $(WV_SYMLINKS)
 
 # Create links for audcal data files
-<<<<<<< HEAD
-<<<<<<< HEAD
 $(shell mkdir -p $(TARGET_OUT_ETC)/firmware/wcd9306; \
     ln -sf /data/misc/audio/wcd9320_anc.bin \
     $(TARGET_OUT_ETC)/firmware/wcd9306/wcd9306_anc.bin; \
     ln -sf /data/misc/audio/mbhc.bin \
     $(TARGET_OUT_ETC)/firmware/wcd9306/wcd9306_mbhc.bin)
 
-=======
-=======
->>>>>>> 56d5d03... testing 1
 $(shell mkdir -p $(TARGET_OUT)/etc/firmware/wcd9320; \
 	ln -sf /data/misc/audio/wcd9320_anc.bin \
 		$(TARGET_OUT)/etc/firmware/wcd9320/wcd9320_anc.bin;\
@@ -645,10 +576,6 @@ $(shell mkdir -p $(TARGET_OUT)/etc/firmware/wcd9320; \
 		$(TARGET_OUT)/etc/firmware/wcd9320/wcd9320_mbhc.bin; \
 	ln -sf /data/misc/audio/wcd9320_mad_audio.bin \
 		$(TARGET_OUT)/etc/firmware/wcd9320/wcd9320_mad_audio.bin)
-<<<<<<< HEAD
->>>>>>> 56d5d03... testing 1
-=======
->>>>>>> 56d5d03... testing 1
 
 endif
 endif
