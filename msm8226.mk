@@ -94,7 +94,6 @@ PRODUCT_PACKAGES += \
     camera.msm8226 \
     libboringssl-compat \
     libstlport \
-
     libxml2
     #Snap
 
@@ -107,8 +106,7 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    charger_res_images
-
+    charger_res_images \
     SnapdragonCamera
 
 # Charger
