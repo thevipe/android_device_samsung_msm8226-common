@@ -67,7 +67,6 @@ BLUETOOTH_HCI_USE_MCT := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
-=======
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
@@ -139,7 +138,6 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
-<<<<<<< HEAD
 # Platform
 TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
@@ -189,7 +187,6 @@ TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8974
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
->>>>>>> 56d5d03... testing 1
 
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
