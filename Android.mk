@@ -1,4 +1,4 @@
-
+#
 # Copyright (C) 2014 The CyanogenMod Project
 #
 # Copyright (C) 2012 The Android Open-Source Project
@@ -26,14 +26,13 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(BOARD_VENDOR),samsung)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8226)
-
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 ADSP_IMAGES := \
     adsp.b00 adsp.b01 adsp.b02 adsp.b03 adsp.b04 adsp.b05 adsp.b06 \
     adsp.b08 adsp.b09 adsp.b10 adsp.b11 adsp.b12 adsp.b13 adsp.mdt
 
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+#include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 ADSP_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(ADSP_IMAGES)))
 $(ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
@@ -221,7 +220,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(SECSTOR_SYMLINKS)
 
 SKM_IMAGES := \
     skm.b00 skm.b01 skm.b02 skm.b03 skm.mdt
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+#include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 SKM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(SKM_IMAGES)))
 $(SKM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
@@ -554,11 +553,11 @@ WV_IMAGES := \
     widevine.b00 widevine.b01 widevine.b02 widevine.b03 widevine.mdt
 
 WV_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(WV_IMAGES)))
-$(WV_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Widevine firmware link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /firmware/image/$(notdir $@) $@
+#$(WV_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+#	@echo "Widevine firmware link: $@"
+#	@mkdir -p $(dir $@)
+#	@rm -rf $@
+#	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WV_SYMLINKS)
 
