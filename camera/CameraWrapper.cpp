@@ -155,15 +155,7 @@ static bool wasVideo = false;
 
 char *camera_fixup_setparams(struct camera_device *device, const char *settings)
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-	int id = CAMERA_ID(device);
-=======
     int id = CAMERA_ID(device);
->>>>>>> fa73356... camerawrapper from du 6
-=======
-    int id = CAMERA_ID(device);
->>>>>>> fa73356... camerawrapper from du 6
     android::CameraParameters params;
     params.unflatten(android::String8(settings));
 
@@ -419,15 +411,7 @@ int camera_auto_focus(struct camera_device * device)
 
 int camera_cancel_auto_focus(struct camera_device * device)
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-	android::CameraParameters params;
-=======
     android::CameraParameters params;
->>>>>>> fa73356... camerawrapper from du 6
-=======
-    android::CameraParameters params;
->>>>>>> fa73356... camerawrapper from du 6
     int ret = 0;
 
     ALOGV("%s", __FUNCTION__);
@@ -741,4 +725,3 @@ int camera_get_camera_info(int camera_id, struct camera_info *info)
         return 0;
     return gVendorModule->get_camera_info(camera_id, info);
 }
-
