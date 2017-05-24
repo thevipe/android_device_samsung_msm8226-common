@@ -7,7 +7,7 @@
   },
   {
     "remote": "github",
-    "repository": "sub77/android_vendor_samsung",
+    "repository": "rosand25/android_vendor_samsung",
     "target_path": "vendor/samsung",
     "revision": "android-7.1"
   },
