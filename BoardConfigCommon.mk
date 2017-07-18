@@ -192,6 +192,11 @@ TARGET_USERIMAGES_USE_F2FS := true
 -include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
+BOARD_SEPOLICY_UNION += \
+       hostapd.te \
+       platform_app.te \
+       kernel.te
+
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
