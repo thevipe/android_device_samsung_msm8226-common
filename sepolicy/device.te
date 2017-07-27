@@ -1,5 +1,2 @@
-# EFS
+type io_device, dev_type;
 type efs_block_device, dev_type;
-
-# Fingerprint
-type vfsspi_device, dev_type;

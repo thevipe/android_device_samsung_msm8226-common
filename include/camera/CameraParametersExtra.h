@@ -116,7 +116,7 @@ const char CameraParameters::EFFECT_VINTAGE_COLD[] = "vintage-cold"; \
 const char CameraParameters::EFFECT_VINTAGE_WARM[] = "vintage-warm"; \
 const char CameraParameters::EFFECT_WASHED[] = "washed"; \
 const char CameraParameters::SCENE_MODE_BACKLIGHT[] = "backlight"; \
-const char CameraParameters::SCENE_MODE_ASD[] = "asd";
+const char CameraParameters::SCENE_MODE_ASD[] = "asd"; \
 
 #define CAMERA_PARAMETERS_EXTRA_H \
     static const char KEY_SUPPORTED_ISO_MODES[]; \
@@ -220,4 +220,12 @@ const char CameraParameters::SCENE_MODE_ASD[] = "asd";
     static const char EFFECT_VINTAGE_WARM[]; \
     static const char EFFECT_WASHED[]; \
     static const char SCENE_MODE_BACKLIGHT[]; \
-    static const char SCENE_MODE_ASD[];
+    static const char SCENE_MODE_ASD[]; \
+    int getInt64(const char *key) const; \
+    const char *getPreviewFrameRateMode() const; \
+    void setPreviewFrameRateMode(const char *mode); \
+    void getMeteringAreaCenter(int *x, int *y) const; \
+    void setTouchIndexAec(int x, int y); \
+    void setTouchIndexAf(int x, int y); \
+    void setPreviewFpsRange(int minFPS, int maxFPS);
+
